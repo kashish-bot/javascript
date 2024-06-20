@@ -58,13 +58,29 @@ const info = {
     name: "Kashish",
     fullName : "KashishRani",
     "full Name": "Kashish Rani",
-    Gmail: "kashishr772@gmail.com",
-    sym: "key1",
+    Gmail: "kashish@772.com",
+    [mySym]: "mykey1", // this is how we defne symbols in object//
     isLogIn: false,
     lastLogInDays: ["Monday" , "Friday"],
 };
 console.log(info.Gmail)
-console.log(info["Gmail"]); //try to call and object like this//
+console.log(info["Gmail"]); //try to call objects like this//
 console.log(info["full Name"]);
-console.log(typeof false)
-console.log(info.sym);
+console.log(typeof false);
+console.log(info[mySym]);
+console.log(typeof mySym); 
+
+info.Gmail = "kashish@chatgpt.com" //this is how we can change value in object//
+info["full Name"]= "nishant kumar";
+info.fullName = "harsh patra"
+console.log(info);
+
+info.greeting = function(){
+    console.log("Hello js user !!");
+};
+info.greetingtwo = function(){
+    console.log(`Hello js user , ${this.name}`);
+}
+console.log(info.greetingtwo());
+console.log(info.greeting());
+

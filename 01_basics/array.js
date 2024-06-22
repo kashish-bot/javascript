@@ -41,7 +41,7 @@ console.log(students);*/
 //spread//
 /*const Astudents = ["kashish" , "harsh" , "Nishanst" , "bulbul"];
 const Bstudents = ["abc" , "def" , "xyz" , "lmn"];
-const students = [...Astudents , ...Bstudents];   // ...is said spread method this is used when we need to combine more then one array//
+const students = [...Astudents , ...Bstudents];   // ...is said spread operator this is used when we need to combine more then one array//
 console.log(students);*/
 
 //flat// 
@@ -52,7 +52,7 @@ console.log(anotherArray);*/
 
 
 //......................................OBJECTS.........................................//
-const mySym = Symbol("key1")
+/*const mySym = Symbol("key1")
 
 const info = {
     name: "Kashish",
@@ -82,5 +82,82 @@ info.greetingtwo = function(){
     console.log(`Hello js user , ${this.name}`);
 }
 console.log(info.greetingtwo());
-console.log(info.greeting());
+console.log(info.greeting());*/
+
+/*const mysymbol = Symbol("5star")
+const user = {
+    email : "kashishrajput@gmail.com",
+    LogedIn : true,
+    [mysymbol] : "7star",
+    fullname : {                                   //this is how we add object in a object//
+        userFullname : {
+            firstname : "Kashihs",
+            lastname : "Rani",
+        }
+    }
+}
+console.log(user[mysymbol]);
+console.log(typeof mysymbol);
+console.log(user.fullname.userFullname.firstname);
+console.log(typeof fullname); */
+
+const obj1 = {1: "a" , 2: "b"};
+const obj2 = {3: "c" , 4: "d"};
+const obj3 = {5: "e" , 6: "f"};
+const obj4 = Object.assign({} , obj1 , obj2 , obj3);    // this how we combine 2 or more objects //
+console.log(obj4);
+const obj5 = {...obj1 , ...obj2 , ...obj3};  // this is simplest way to combine 2 or more onjects (mostaly we are ganna use this spread operator);
+console.log(obj5);
+
+//objects from database// 
+const user = [                         //objects or data come from database will be in this syntax//
+    {
+        id: 1,
+        email: "k@gmail.com",
+    },
+    {
+        id: 1,
+        email: "k@gmail.com",
+    },{
+        id: 1,
+        email: "k@gmail.com",
+    },
+    {
+        id: 1,
+        email: "k@gmail.com",
+    },
+];
+console.log(user[1].id);                   //this is how we print data in array of object //
+const info = {
+    name: "Kashish",
+    fullName : "KashishRani",
+    "full Name": "Kashish Rani",
+    Gmail: "kashish@772.com",
+    //[mySym]: "mykey1", // this is how we defne symbols in object//
+    isLogIn: false,
+    lastLogInDays: ["Monday" , "Friday"],
+};
+console.log(info);
+console.log(Object.keys(info));   //it will print the the keys of object in array
+console.log(Object.values(info));  //it will print the values of keys in array
+console.log(Object.entries(info));  //it will print the values and keys in saperate array
+
+console.log(info.hasOwnProperty("lastLogInDays"));  // this is how we check whether the object contain the required information it provide result in boolean method//
+console.log(info.hasOwnProperty("LogInDays"));
+
+
+//destructuring in object//
+const course = {
+    courseName : "chai aur code",
+    studentName : "kashishrani",
+    fees : "599",
+};
+const {studentName : Sname} = course; //this is the another syntax to print values in object//
+console.log(Sname);
+
+
+
+
+
+
 

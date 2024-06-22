@@ -1,3 +1,12 @@
+
+console.log("Kashish");
+//Let , Const , Var //
+
+let str1 = "jai";
+let str2 = "mahakal";
+let str3 = str1 + str2;
+console.log(str3);
+
 /*console.log("Kashish");
 //Let , Const , Var //
 
@@ -98,8 +107,6 @@ console.log(newDate.getDay());
 console.log(newDate.getMonth());
 console.log(newDate.getFullYear());
 console.log(`Hey! my self Kashish today is ${newDate.toDateString()} & time is ${Math.floor(newDate.getTime()/1000)}`); */
-
-
 
 
 

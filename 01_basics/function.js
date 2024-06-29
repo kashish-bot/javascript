@@ -142,9 +142,7 @@ switch (studentName) {
     default:
         console.log("StudentName not found");
 };
-
-
-
+ 
 
 
 

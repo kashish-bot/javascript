@@ -1,3 +1,11 @@
+
+/*  1. (for loop) = The for loop is used when the number of iterations is known beforehand.
+syntax = for (initialization; condition; increment) {
+    // code to be executed
+}  */
+for (let i = 0; i <=5; i++) {
+    console.log(i)
+}
 /*  1. (for loop) = The for loop is used when the number of iterations is known beforehand.
 syntax = for (initialization; condition; increment) {
     // code to be executed

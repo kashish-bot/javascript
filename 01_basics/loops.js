@@ -4,7 +4,7 @@ syntax = for (initialization; condition; increment) {
     // code to be executed
 }  */
 for (let i = 0; i <=5; i++) {
-    console.log(i)
+   // console.log(i)
 }
 /*  1. (for loop) = The for loop is used when the number of iterations is known beforehand.
 syntax = for (initialization; condition; increment) {
@@ -86,10 +86,73 @@ iMap .set ('IN', "INDIA")
 iMap .set ('USA', "UNITED STATES OF AMERICA")
 iMap .set ('FR', "FRANCE")
 iMap .set ('BN', "BHUTAN")
-console.log(iMap);
+//onsole.log(iMap);
 for (let [key , value] of iMap.entries() ) {
-    console.log(`${key} :- ${value}`);
+    //console.log(`${key} :- ${value}`);
 }
+
+
+/* (for - in loop) = The for...in loop iterates over the enumerable properties of an object.
+    syntax = for (variable in object) {
+    // code to be executed
+}*/
+
+
+const myObject = {
+    js : "Javascript",
+    cpp : "C++",
+    py : "PYTHON",
+}
+for (const object in myObject) {
+   //console.log(object);
+}
+
+
+/* (forEach loop) =  the forEach method is specifically used to execute a function once for each array element. 
+   Syntax = array.forEach(function/arrayfunction(currentValue, index, array) {
+    // code to execute for each element
+});*/
+const coding = ["js", "C++", "C", "java" ,"ruby"]
+coding.forEach(function(item) {
+    //console.log(item);
+})
+//using arrow function in forEach loop//
+coding.forEach(item => {
+    //console.log(item);
+});
+//accessing index and whole array in forEach loop using function or arrow function//
+coding.forEach(function(item, index, coding) {
+    console.log(item, index, coding);
+})
+// objects within array using forEach loop//
+const fruits = [
+    {
+        fruitName : "Apple",
+        fruitColor : "Red",
+    },
+    {
+        fruitName : "Mango",
+        fruitColor : "Yellow",
+    },
+    {
+        fruitName : "Grappes",
+        fruitColor : "Green",
+    },
+    {
+        fruitName : "Papaya",
+        fruitColor : "Orange",
+    },
+]
+//printing objects within array using function//
+fruits.forEach(function(item) {
+    console.log(`Name : ${item.fruitName} is of ${item.fruitColor} color.`);
+});
+
+//printing objects within array using Arrow-function//
+fruits.forEach(item => {
+    console.log(`Name : ${item.fruitName} is of ${item.fruitColor} color.`);
+    //console.log("---");
+}); 
 
 
 

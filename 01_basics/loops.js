@@ -3,6 +3,15 @@
 syntax = for (initialization; condition; increment) {
     // code to be executed
 }  */
+
+for (let i = 0; i <=5; i++) {
+    console.log(i)
+}
+/*  1. (for loop) = The for loop is used when the number of iterations is known beforehand.
+syntax = for (initialization; condition; increment) {
+    // code to be executed
+}  */
+
 for (let i = 0; i <=5; i++) {
    // console.log(i)
 }
@@ -10,6 +19,7 @@ for (let i = 0; i <=5; i++) {
 syntax = for (initialization; condition; increment) {
     // code to be executed
 }  */
+
 /* for (let i = 0; i <=5; i++) {
     console.log("Kashish")
 }
@@ -86,17 +96,33 @@ iMap .set ('IN', "INDIA")
 iMap .set ('USA', "UNITED STATES OF AMERICA")
 iMap .set ('FR', "FRANCE")
 iMap .set ('BN', "BHUTAN")
+
+//console.log(iMap);
+
 //onsole.log(iMap);
+>>>>>>> e70bea90b41bedf580228b4c9d1b2b257f2b9d35
 for (let [key , value] of iMap.entries() ) {
     //console.log(`${key} :- ${value}`);
 }
 
+/* (for - in loop) = The for...in loop iterates over the enumerable properties of an object.
+    for (variable in object) {
+    // code to be executed
+}*/
 
 /* (for - in loop) = The for...in loop iterates over the enumerable properties of an object.
     syntax = for (variable in object) {
     // code to be executed
 }*/
 
+const myObject = {
+    js : "Javascript",
+    cpp : "C++",
+    py : "PYTHON",
+}
+for (const object in myObject) {
+    console.log(object);
+}
 
 const myObject = {
     js : "Javascript",
@@ -148,11 +174,16 @@ fruits.forEach(function(item) {
     console.log(`Name : ${item.fruitName} is of ${item.fruitColor} color.`);
 });
 
+
+
+
+
 //printing objects within array using Arrow-function//
 fruits.forEach(item => {
     console.log(`Name : ${item.fruitName} is of ${item.fruitColor} color.`);
     //console.log("---");
 }); 
+
 
 
 

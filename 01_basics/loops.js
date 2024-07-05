@@ -5,7 +5,7 @@ syntax = for (initialization; condition; increment) {
 }  */
 
 for (let i = 0; i <=5; i++) {
-    console.log(i)
+   // console.log(i)
 }
 /*  1. (for loop) = The for loop is used when the number of iterations is known beforehand.
 syntax = for (initialization; condition; increment) {
@@ -99,8 +99,6 @@ iMap .set ('BN', "BHUTAN")
 
 //console.log(iMap);
 
-//onsole.log(iMap);
->>>>>>> e70bea90b41bedf580228b4c9d1b2b257f2b9d35
 for (let [key , value] of iMap.entries() ) {
     //console.log(`${key} :- ${value}`);
 }
@@ -109,20 +107,6 @@ for (let [key , value] of iMap.entries() ) {
     for (variable in object) {
     // code to be executed
 }*/
-
-/* (for - in loop) = The for...in loop iterates over the enumerable properties of an object.
-    syntax = for (variable in object) {
-    // code to be executed
-}*/
-
-const myObject = {
-    js : "Javascript",
-    cpp : "C++",
-    py : "PYTHON",
-}
-for (const object in myObject) {
-    console.log(object);
-}
 
 const myObject = {
     js : "Javascript",
@@ -148,7 +132,7 @@ coding.forEach(item => {
 });
 //accessing index and whole array in forEach loop using function or arrow function//
 coding.forEach(function(item, index, coding) {
-    console.log(item, index, coding);
+    //console.log(item, index, coding);
 })
 // objects within array using forEach loop//
 const fruits = [
@@ -171,18 +155,84 @@ const fruits = [
 ]
 //printing objects within array using function//
 fruits.forEach(function(item) {
-    console.log(`Name : ${item.fruitName} is of ${item.fruitColor} color.`);
+    //console.log(`Name : ${item.fruitName} is of ${item.fruitColor} color.`);
 });
-
-
-
-
 
 //printing objects within array using Arrow-function//
 fruits.forEach(item => {
-    console.log(`Name : ${item.fruitName} is of ${item.fruitColor} color.`);
+   // console.log(`Name : ${item.fruitName} is of ${item.fruitColor} color.`);
     //console.log("---");
 }); 
+
+// ........... FILTER.............//
+//In JavaScript, filter is a method available on arrays that allows you to create a new array containing all elements that pass a certain test defined by a provided function. The filter method does not mutate the original array but returns a new array with the elements that meet the condition.//
+/* Syntax =
+ let newArray = array.filter(function(element, index, array) {
+  // return true or false based on some condition
+});*/
+let counting = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let newArray = counting.filter(function(counting) {
+    return counting > 4;
+});
+//console.log(newArray); 
+const users = [
+    { name: 'Shiva', age: 25 , born: 1999},
+    { name: 'Shakti', age: 30 , born: 2003},
+    { name: 'kanhaiya', age: 35 , born: 2010},
+    { name: 'Radha Rani', age: 40 , born: 2015},
+  ];
+  
+  //const youngUsers = users.filter(user => user.age < 30);
+  //youngUsers = users.filter( (YU) => YU.age >= 30 && YU.born >= 2010);
+  //youngUsers = users.filter( (YU) => {return YU.age < 35 && YU.born < 2010});  // when ever we use scope{} then we need to return so that it can print atherwise it will not print
+  //console.log(youngUsers);
+
+  //..............MAP....................//
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+/*const newNums = myNums.map ( (num) => {
+    return num % 2 === 0
+})*/
+const newNumbers = myNums      //this called chaining
+                   .map( (num) => num * 10 )
+                   .map( (num) => num + 1 )
+                   .filter( (num) => num > 51)
+//console.log(newNumbers);
+
+//............REDUCE..............//
+const numeric = [1, 2, 3, 4]
+/*const myTotal = numeric.reduce (function(accumulator, currentValue) {
+    console.log(`accumulator: ${accumulator} & currentValue: ${currentValue}`);
+    return accumulator + currentValue
+}, 0)*/
+
+const myTotal = numeric.reduce ((accumulator, currentValue) => {
+    //console.log(`accumulator: ${accumulator} & currentValue: ${currentValue}`);
+    return accumulator + currentValue
+}, 0)
+//console.log(myTotal);
+
+
+const shoppingCart = [
+    {
+        courseName : "javaScript",
+        price : 399,
+    },
+    {
+        courseName : "Python",
+        price : 599,
+    },
+    {
+        courseName : "Java",
+        price : 899,
+    },
+    {
+        courseName : "DSA",
+        price : 1999,
+    },
+]
+const courseLelo = shoppingCart.reduce( (accumulator, currentValue) => 
+    (accumulator + currentValue.price) ,0 );
+console.log(courseLelo);
 
 
 

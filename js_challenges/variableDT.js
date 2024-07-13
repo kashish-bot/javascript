@@ -1,12 +1,12 @@
 var num = 5;
-console.log(num);
+//console.log(num);
 let name = "KASHISH"
-console.log(name);
+//console.log(name);
 const isTrue = true
-console.log(isTrue);
+//console.log(isTrue);
 
 const studentName = ["kashish", "uma", "chakresh", "nishant"]
-console.log(typeof studentName);
+//console.log(typeof studentName);
 
 const studentD = {
     fullName : "Kashish Rani",
@@ -14,4 +14,14 @@ const studentD = {
     Id : "Kashish_7",
     isPresent : true,
 }
-console.log(typeof studentD.rollNum);
+//console.log(typeof studentD.rollNum);
+
+let city = "Delhi";
+//console.log(city);
+city = "Jaipur";
+//console.log(city);
+
+//const state = "U.P";
+const state = "J&K";
+console.log(state);
+// the error is "we cannot declare a same variable again & again using const"

@@ -50,6 +50,9 @@ const anotherArray = array.flat(2); //flat is used to solve multiple arrays insi
 console.log(array);
 console.log(anotherArray);*/
 
+console.log(Array.isArray("Kashish"));
+console.log(Array.from("Kashish"));
+
 
 //......................................OBJECTS.........................................//
 /*const mySym = Symbol("key1")
@@ -105,9 +108,9 @@ const obj1 = {1: "a" , 2: "b"};
 const obj2 = {3: "c" , 4: "d"};
 const obj3 = {5: "e" , 6: "f"};
 const obj4 = Object.assign({} , obj1 , obj2 , obj3);    // this how we combine 2 or more objects //
-console.log(obj4);
+//console.log(obj4);
 const obj5 = {...obj1 , ...obj2 , ...obj3};  // this is simplest way to combine 2 or more onjects (mostaly we are ganna use this spread operator);
-console.log(obj5);
+//console.log(obj5);
 
 //objects from database// 
 const user = [                         //objects or data come from database will be in this syntax//
@@ -127,7 +130,7 @@ const user = [                         //objects or data come from database will
         email: "k@gmail.com",
     },
 ];
-console.log(user[1].id);                   //this is how we print data in array of object //
+//console.log(user[1].id);                   //this is how we print data in array of object //
 const info = {
     name: "Kashish",
     fullName : "KashishRani",
@@ -137,13 +140,13 @@ const info = {
     isLogIn: false,
     lastLogInDays: ["Monday" , "Friday"],
 };
-console.log(info);
-console.log(Object.keys(info));   //it will print the the keys of object in array
-console.log(Object.values(info));  //it will print the values of keys in array
-console.log(Object.entries(info));  //it will print the values and keys in saperate array
+//console.log(info);
+//console.log(Object.keys(info));   //it will print the the keys of object in array
+//console.log(Object.values(info));  //it will print the values of keys in array
+//console.log(Object.entries(info));  //it will print the values and keys in saperate array
 
-console.log(info.hasOwnProperty("lastLogInDays"));  // this is how we check whether the object contain the required information it provide result in boolean method//
-console.log(info.hasOwnProperty("LogInDays"));
+//console.log(info.hasOwnProperty("lastLogInDays"));  // this is how we check whether the object contain the required information it provide result in boolean method//
+//console.log(info.hasOwnProperty("LogInDays"));
 
 
 //destructuring in object//
@@ -153,7 +156,7 @@ const course = {
     fees : "599",
 };
 const {studentName : Sname} = course; //this is the another syntax to print values in object//
-console.log(Sname);
+//console.log(Sname);
 
 
 

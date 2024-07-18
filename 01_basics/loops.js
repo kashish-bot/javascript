@@ -5,7 +5,7 @@ syntax = for (initialization; condition; increment) {
 }  */
 
  for (let i = 0; i <=5; i++) {
-   // console.log("Kashish")//
+   //console.log("Kashish")//
 }
 
 let sum = 0;
@@ -179,7 +179,7 @@ const newNumbers = myNums      //this called chaining
                    .map( (num) => num * 10 )
                    .map( (num) => num + 1 )
                    .filter( (num) => num > 51)
-//console.log(newNumbers);
+console.log(newNumbers);
 
 //............REDUCE..............//
 const numeric = [1, 2, 3, 4]

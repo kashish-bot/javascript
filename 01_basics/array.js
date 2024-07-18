@@ -55,7 +55,7 @@ console.log(Array.from("Kashish"));
 
 
 //......................................OBJECTS.........................................//
-/*const mySym = Symbol("key1")
+const mySym = Symbol("key1")
 
 const info = {
     name: "Kashish",
@@ -66,28 +66,28 @@ const info = {
     isLogIn: false,
     lastLogInDays: ["Monday" , "Friday"],
 };
-console.log(info.Gmail)
-console.log(info["Gmail"]); //try to call objects like this//
-console.log(info["full Name"]);
-console.log(typeof false);
-console.log(info[mySym]);
-console.log(typeof mySym); 
+//console.log(info.Gmail)
+//console.log(info["Gmail"]); //try to call objects like this//
+//console.log(info["full Name"]);
+//console.log(typeof false);
+//console.log(info[mySym]);
+//console.log(typeof mySym); 
 
 info.Gmail = "kashish@chatgpt.com" //this is how we can change value in object//
 info["full Name"]= "nishant kumar";
 info.fullName = "harsh patra"
-console.log(info);
+//console.log(info);
 
 info.greeting = function(){
-    console.log("Hello js user !!");
+    //console.log("Hello js user !!");
 };
 info.greetingtwo = function(){
-    console.log(`Hello js user , ${this.name}`);
+    //console.log(`Hello js user , ${this.name}`);
 }
-console.log(info.greetingtwo());
-console.log(info.greeting());*/
+//console.log(info.greetingtwo());
+//console.log(info.greeting());
 
-/*const mysymbol = Symbol("5star")
+const mysymbol = Symbol("5star")
 const user = {
     email : "kashishrajput@gmail.com",
     LogedIn : true,
@@ -99,10 +99,10 @@ const user = {
         }
     }
 }
-console.log(user[mysymbol]);
-console.log(typeof mysymbol);
-console.log(user.fullname.userFullname.firstname);
-console.log(typeof fullname); */
+//console.log(user[mysymbol]);
+//console.log(typeof mysymbol);
+//console.log(user.fullname.userFullname.firstname);
+//console.log(typeof fullname); 
 
 const obj1 = {1: "a" , 2: "b"};
 const obj2 = {3: "c" , 4: "d"};
@@ -113,7 +113,7 @@ const obj5 = {...obj1 , ...obj2 , ...obj3};  // this is simplest way to combine 
 //console.log(obj5);
 
 //objects from database// 
-const user = [                         //objects or data come from database will be in this syntax//
+const user1 = [                         //objects or data come from database will be in this syntax//
     {
         id: 1,
         email: "k@gmail.com",
@@ -130,7 +130,7 @@ const user = [                         //objects or data come from database will
         email: "k@gmail.com",
     },
 ];
-//console.log(user[1].id);                   //this is how we print data in array of object //
+//console.log(user1[1].id);                   //this is how we print data in array of object //
 const info = {
     name: "Kashish",
     fullName : "KashishRani",
@@ -156,7 +156,7 @@ const course = {
     fees : "599",
 };
 const {studentName : Sname} = course; //this is the another syntax to print values in object//
-//console.log(Sname);
+console.log(Sname);
 
 
 

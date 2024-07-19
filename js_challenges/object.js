@@ -5,10 +5,10 @@ const bookObject = {
     year: 2019,
 }
 //log the object to console//
-console.log(bookObject);
+//console.log(bookObject);
 //access the title and auther properties of object//
-console.log(bookObject.title);
-console.log(bookObject.auther);
+//console.log(bookObject.title);
+//console.log(bookObject.auther);
 
 const book = {
     bookName: "kanchan",
@@ -19,8 +19,8 @@ book.year = 2025
 function bookinfo () {
     return `${book.bookName} is written by ${book.writer}`
 }
-console.log(bookinfo());
-console.log(book.year);
+//console.log(bookinfo());
+//console.log(book.year);
 
 
 // ACTIVITY 4 //
@@ -32,7 +32,7 @@ const bookItems = {
 bookItems.bookCalling = function() {
     return `${this.book1} was published in ${this.year}`
 }
-console.log(bookItems.bookCalling());
+//console.log(bookItems.bookCalling());
 
 // ACTIVITY 3 //
 const libraryObj = {
@@ -46,5 +46,21 @@ const libraryObj = {
 //console.log(libraryObj);
 //console.log(libraryObj.name);
 libraryObj.bookLibrary.forEach((bk) => {
-    return `Book Title: ${bk}`
+    //console.log(`Book Title: ${bk.title}`);
 })
+
+const pustak = {
+    bk1: "maths",
+    writer: "R.D.Sharma",
+    year: 2014,
+}
+
+for(const bk1 in pustak) {
+    console.log(`${bk1}: ${pustak[bk1]}`);
+}
+//console.log(`${Object.keys(pustak)}: ${Object.values(pustak)}`);
+console.log(Object.entries(pustak));
+/*const keys = Object.keys(pustak);
+const values = Object.values(pustak);
+console.log(keys , values);*/
+

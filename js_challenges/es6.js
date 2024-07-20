@@ -28,26 +28,28 @@ const arr2 = [11 , 12 , 13 , 14 , 15]
 const spread = [...arr1, ...arr2]
 //console.log(spread);
 
-const array = [101 , 102 , 103 , 104 , 105];
- let sum =0;
-
-for (let i = 0; i < array.length; i++) {
-   sum = sumelement(array[i]);
-    
+function sum(...number) {
+    return number.reduce((total , num) => total + num , 0)
 }
-function sumelement(element){
-    
-    sum=sum+element
-    return sum;
-}
-
-//console.log(sum);
-
+//console.log(sum(1 , 2, 3 , 4 , 5 , 6 , 7));
 
 function product(num1 , num2=10) {
     return num1 * num2
 }
-console.log(product(20 , 30));
+//console.log(product(20 , 30));
+
+const fullName = "kashish Rani"
+const age1 = 19
+
+const shakti = {
+    fullName,
+    age,
+    greet(){
+        console.log(`Radhe Radhe! i am ${fullName} and my age is ${age}`);
+    }
+}
+console.log(shakti);
+shakti.greet()
 
 
 

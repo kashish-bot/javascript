@@ -7,19 +7,19 @@ for (let i = 0; i <= 10; i++) {
     
 }
 //while - loop//
-/*let sum = 0
+let sum = 0
 let i = 1
 while (i <=10) {
     sum = sum + i;
     i++
 }
-console.log(sum);*/
+console.log(sum);
 
-let i = 10;
+/* i = 10;
 while (i>=0) {
    //console.log(i);
    i--
-}
+}*/
 //do-while loop//
 let N = 1
 do {
@@ -50,7 +50,7 @@ for (let i = 0; i < N2; i++) {
 for (let i = 1; i <= 10; i++) {
    if(i===5)
       continue;
-   //console.log(i);
+   console.log(i);
 }
 
 for (let j = 1; j <= 10; j++) {
